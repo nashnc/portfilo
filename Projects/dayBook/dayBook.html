@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ========== Start fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ========== End fonts ========== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day Book</title>
+    <link rel="stylesheet" href="dayBook.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="dayBook">
+        <h3>Day Book</h3>
+        <h3>Total : <span id="totalSum">0</span></h3>
+        <div class="row">
+          <input type="number" id="inputText" placeholder="Enter the Amout" />
+        </div>
+        <div class="row2">
+          <button onclick="inCome()">Add</button>
+          <!--  <button onclick="xpense()">Deduct</button>-->
+        </div>
+        <ul id="ledger">
+          <!-- <li class="got"></li>
+          <li class="lost"></li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="dayBook.js"></script>
+  </body>
+</html>
