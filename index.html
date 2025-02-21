@@ -3,99 +3,345 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nash - Portfolio</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
-      }
-      header {
-        background-color: #4CAF50;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      header h1 {
-        margin: 0;
-      }
-      main {
-        padding: 20px;
-        max-width: 900px;
-        margin: 20px auto;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-      h3 {
-        font-size: 1.5em;
-        color: #555;
-      }
-      p {
-        font-size: 1.1em;
-        line-height: 1.6;
-        color: #666;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-      table, th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-      }
-      th {
-        background-color: #4CAF50;
-        color: white;
-      }
-      td {
-        text-align: center;
-      }
-      .profile-img {
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin: 20px auto;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-    </style>
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
+
   <body>
-    <header>
-      <h1>Welcome to My Portfolio</h1>
-    </header>
+    <!-- nav start -->
+    <div>
+      <nav class="navflexone">
+        <h3 class="white">nashnc</h3>
+        <div class="navflextwo">
+          <a href="/" class="linkactive"
+            ><span class="purple">&#35;</span>home</a
+          >
+          <a href="/pages/projects.html"
+            ><span class="purple">&#35;</span>works</a
+          >
+          <a href="/pages/about.html"
+            ><span class="purple">&#35;</span>about-me</a
+          >
+          <a href="/pages/contact.html"
+            ><span class="purple">&#35;</span>contact</a
+          >
+        </div>
+      </nav>
+    </div>
+    <!-- nav ends -->
 
-    <main>
-      <img src="nash.png" alt="Avinash" class="profile-img" />
-      <h3>Hi, I'm Avinash</h3>
-      <p>I am just a normal guy, trying to survive the JavaScript world.</p>
+    <!-- tile and pic start-->
+    <hr />
+    <div class="merndev">
+      <div class="merndev3">
+        <!-- title for me -->
+        <h1>Avinash is a <span class="purple">MERN developer</span></h1>
+        <p>He crafts responsive websites where technologies meet creativity</p>
+        <!-- title for me -->
+        <!-- contact me button -->
+        <a href="/pages/contact.html" class="purpleBox">Contact me !!</a>
+        <!-- contact me button -->
+      </div>
+      <img src="./assets/profilea.png" alt="profile_pic" class="profilepic" />
+      <div class="workingon">
+        <!-- image and footer -->
+        <div class="greyBox">
+          <div class="merndev2">
+            <div class="square"></div>
+            Currently working on <span class="whitebold">Portfolio</span>
+          </div>
+        </div>
+        <!-- image and footer -->
+      </div>
+    </div>
+    <!-- tile and pic end -->
+    <!-- quote starts -->
+    <div class="quote1">
+      <p class="">
+        <q class="quoteline1">With great power comes great electricity bill</q>
+      </p>
+      <p class="quote2"><q class="quoteline2"> - Dr.Who</q></p>
+    </div>
+    <!-- quote ends -->
+    <!-- project starts -->
+    <div class="">
+      <div class="titles">
+        <h1><span class="purple">&#35;</span>projects</h1>
+        <div class="purpledash"></div>
+        <div class="blankdash"></div>
+        <a href="/works">View all~~></a>
+      </div>
+      <h3>Latest Projects</h3>
+      <div class="cardholder">
+        <!-- project 1 Portfolio  -->
+        <div class="card">
+          <table class="table">
+            <tr>
+              <td>
+                <img
+                  src="/assets/portfoliopic.png"
+                  alt="sample.png"
+                  class="projectpic"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>HTML CSS</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>My Portfolio</h4>
+                <p>This current viewing portfolio</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="purplebutton">
+                  <a href="/">Live &rarr;</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- project 1 Portfolio -->
+        <!-- project 2 weight management  -->
 
-      <table>
-        <thead>
+        <div class="card">
+          <table class="table">
+            <tr>
+              <td>
+                <img
+                  src="/assets/sample.png"
+                  alt="sample.png"
+                  class="projectpic"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Express Node.js MongoDB</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Weight Management</h4>
+                <p>To track weight loss</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/wightmanagemtnt" class="purplebutton">Live &rarr;</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- project 2 weight management  -->
+        <!-- project 3 using React -->
+
+        <div class="card">
+          <table class="table">
+            <tr>
+              <td>
+                <img
+                  src="/assets/sample.png"
+                  alt="sample.png"
+                  class="projectpic"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>React</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Under construction</h4>
+                <p>Lorem ipsum dolor sit</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" class="purplebutton">Live &rarr;</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- project 3 using react  -->
+      </div>
+    </div>
+
+    <!-- project ends -->
+    <!-- skills start -->
+    <div class="titles">
+      <!-- title -->
+      <h1><span class="purple">#</span>skills</h1>
+      <div class="purpledash"></div>
+      <div class="blankdash"></div>
+
+      <!-- title -->
+    </div>
+    <div class="">
+      <div class="projectholder">
+        <!--  Languages-->
+        <table class="skilltable">
           <tr>
-            <th>Project Title</th>
-            <th>Languages Used</th>
+            <td>
+              <h4>Languages</h4>
+
+              <tr>
+                <td>
+                  <p>Javascript</p>
+                </td>
+              </tr>
+            </td>
           </tr>
-        </thead>
-        <tbody>
+        </table>
+        <!--  languages -->
+        <!--  Database-->
+        <table class="skilltable">
           <tr>
-            <td>Calculator</td>
-            <td>HTML, CSS, JavaScript</td>
+            <td>
+              <h4>Database</h4>
+            </td>
           </tr>
           <tr>
-            <td>To-Do List</td>
-            <td>HTML, CSS, JavaScript</td>
+            <td>
+              <p>MongoDB</p>
+            </td>
+          </tr>
+        </table>
+        <!--  Database -->
+        <!--  Tools-->
+        <table class="skilltable">
+          <tr>
+            <td>
+              <h4>Tools</h4>
+            </td>
           </tr>
           <tr>
-            <td>Portfolio</td>
-            <td>HTML, CSS</td>
+            <td>
+              <p>VSCode SublimeText</p>
+
+              <p>Git Github</p>
+              <p>Windows</p>
+            </td>
           </tr>
-        </tbody>
-      </table>
-    </main>
+        </table>
+        <!--  Tools -->
+      </div>
+      <div class="projectholder">
+        <!--  Other-->
+        <table class="skilltable">
+          <tr>
+            <td>
+              <h4>Other</h4>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>HTML CSS EJS</p>
+
+              <p>Tailwind Bootstrap</p>
+              <p>Postman</p>
+            </td>
+          </tr>
+        </table>
+        <!--  Other -->
+        <!--  Frameworks-->
+        <table class="skilltable">
+          <tr>
+            <td>
+              <h4>Frame Works</h4>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>React Express.js</p>
+
+              <p>Node.js</p>
+            </td>
+          </tr>
+        </table>
+        <!--  frameworks -->
+      </div>
+    </div>
+    <!-- skills end -->
+    <!-- about start  -->
+    <div>
+      <div class="titles">
+        <h1><span class="purple">#</span>about-me</h1>
+        <div class="purpledash"></div>
+        <div class="blankdash"></div>
+      </div>
+      <p>Hey, i'm Nash!</p>
+      <p>
+        I'm a full-stack newbie based on Kerala,India.I am looking for placement
+        web development carrier.
+      </p>
+      <p>
+        I always strive to learn about the newest technologies and
+        frameworks.Transforming my creativity and knowledge into creations of my
+        hard-work.
+      </p>
+      <a href="/about" class="purplebutton">Read more &rarr; </a>
+    </div>
+    <div>
+      <!-- <img src="/assets/Image-1.png" alt="profile2" /> -->
+    </div>
+    <!-- about end -->
+    <!-- Contact me -->
+
+    <div class="cardholder">
+      <div>
+        <h1><span class="purple">#</span>contact</h1>
+        <p>Hii!!</p>
+        <p>Currently I am looking for placement as a Web Dev.</p>
+      </div>
+      <div class="">
+        <table class="">
+          <tr class="">
+            <td class="">
+              <h3 class="skilltable">Message me here</h3>
+            </td>
+          </tr>
+          <tr>
+            <td class="contactalign">
+              <img
+                src="./assets/telegram.svg"
+                alt="telegram_logo"
+                class="contactlogo"
+              />
+              <span class="purple">:</span>
+              <a href="https://t.me/nashnc11">Telegram</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- contact -->
+    <hr />
+    <!-- footer -->
+    <div>
+      <h5>&#35;disclaimer</h5>
+      <h6>
+        This website is originally designed by following creator in figma and i
+        was inspired and thought to recreate it, as for both experience and
+        personal use only.
+      </h6>
+    </div>
+    <div>
+      <h5>Elias</h5>
+      <h5>elias@elias-dev.ml</h5>
+      <p>Web designer and front-end developer</p>
+    </div>
+    <div>
+      <h4>Media</h4>
+      <!-- media logs and pics -->
+    </div>
+    <div>&copy; Copyright 2022. Made by Elias</div>
+    <!-- footer -->
   </body>
 </html>
