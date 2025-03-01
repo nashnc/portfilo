@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/disclamer.css" />
   </head>
 
   <body>
@@ -13,59 +14,83 @@
       <nav class="navflexone">
         <h3 class="white">nashnc</h3>
         <div class="navflextwo">
-          <a href="/" class="linkactive"
+          <a href="#home" class="linkactive"
             ><span class="purple">&#35;</span>home</a
           >
-          <a href="/pages/projects.html"
-            ><span class="purple">&#35;</span>works</a
-          >
-          <a href="/pages/about.html"
-            ><span class="purple">&#35;</span>about-me</a
-          >
-          <a href="/pages/contact.html"
-            ><span class="purple">&#35;</span>contact</a
-          >
+          <a href="#works"><span class="purple">&#35;</span>works</a>
+          <a href="#about"><span class="purple">&#35;</span>about-me</a>
+          <a href="#contact"><span class="purple">&#35;</span>contact</a>
         </div>
       </nav>
     </div>
     <!-- nav ends -->
 
+    <!-- disclaimer at its finest -->
+    <!-- The Modal -->
+    <div id="modal">
+      <div id="modal-content">
+        <button id="close-btn">✘</button>
+
+        <h5>&#35;disclaimer</h5>
+        <h6>
+          This website is originally designed by following creator in figma and
+          i was inspired and thought to recreate it, as for both experience and
+          personal use only.
+        </h6>
+        <div>
+          <h5>Elias</h5>
+          <h5>elias@elias-dev.ml</h5>
+          <p>Web designer and front-end developer</p>
+        </div>
+        <div>
+          <h4>Media</h4>
+          &copy; Copyright 2022. Made by Elias
+        </div>
+        <hr />
+        <div>
+          <h5>#Extra Masala</h5>
+          <p>
+            This site is under development as I am doing a hobby project, hence
+            it may not display properly on all devices or with all content.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- disclaimer at its finest -->
+
     <!-- tile and pic start-->
+    <script src="script/poppup.js"></script>
     <hr />
     <div class="merndev">
       <div class="merndev3">
-        <!-- title for me -->
         <h1>Avinash is a <span class="purple">MERN developer</span></h1>
         <p>He crafts responsive websites where technologies meet creativity</p>
-        <!-- title for me -->
-        <!-- contact me button -->
         <a href="/pages/contact.html" class="purpleBox">Contact me !!</a>
-        <!-- contact me button -->
       </div>
       <img src="./assets/profilea.png" alt="profile_pic" class="profilepic" />
       <div class="workingon">
-        <!-- image and footer -->
         <div class="greyBox">
           <div class="merndev2">
             <div class="square"></div>
             Currently working on <span class="whitebold">Portfolio</span>
           </div>
         </div>
-        <!-- image and footer -->
       </div>
     </div>
     <!-- tile and pic end -->
+
     <!-- quote starts -->
     <div class="quote1">
-      <p class="">
+      <p>
         <q class="quoteline1">With great power comes great electricity bill</q>
       </p>
       <p class="quote2"><q class="quoteline2"> - Dr.Who</q></p>
     </div>
     <!-- quote ends -->
+
     <!-- project starts -->
     <div class="">
-      <div class="titles">
+      <div id="works" class="titles">
         <h1><span class="purple">&#35;</span>projects</h1>
         <div class="purpledash"></div>
         <div class="blankdash"></div>
@@ -73,14 +98,14 @@
       </div>
       <h3>Latest Projects</h3>
       <div class="cardholder">
-        <!-- project 1 Portfolio  -->
+        <!-- project 1 Portfolio -->
         <div class="card">
           <table class="table">
             <tr>
               <td>
                 <img
                   src="/assets/portfoliopic.png"
-                  alt="sample.png"
+                  alt="portfolio_pic"
                   class="projectpic"
                 />
               </td>
@@ -106,8 +131,8 @@
           </table>
         </div>
         <!-- project 1 Portfolio -->
-        <!-- project 2 weight management  -->
 
+        <!-- project 2 weight management -->
         <div class="card">
           <table class="table">
             <tr>
@@ -132,14 +157,14 @@
             </tr>
             <tr>
               <td>
-                <a href="/wightmanagemtnt" class="purplebutton">Live &rarr;</a>
+                <a href="/weightmanagement" class="purplebutton">Live &rarr;</a>
               </td>
             </tr>
           </table>
         </div>
-        <!-- project 2 weight management  -->
-        <!-- project 3 using React -->
+        <!-- project 2 weight management -->
 
+        <!-- project 3 using React -->
         <div class="card">
           <table class="table">
             <tr>
@@ -169,28 +194,24 @@
             </tr>
           </table>
         </div>
-        <!-- project 3 using react  -->
+        <!-- project 3 using react -->
       </div>
     </div>
-
     <!-- project ends -->
+
     <!-- skills start -->
     <div class="titles">
-      <!-- title -->
       <h1><span class="purple">#</span>skills</h1>
       <div class="purpledash"></div>
       <div class="blankdash"></div>
-
-      <!-- title -->
     </div>
+
     <div class="">
       <div class="projectholder">
-        <!--  Languages-->
         <table class="skilltable">
           <tr>
             <td>
               <h4>Languages</h4>
-
               <tr>
                 <td>
                   <p>Javascript</p>
@@ -199,8 +220,7 @@
             </td>
           </tr>
         </table>
-        <!--  languages -->
-        <!--  Database-->
+
         <table class="skilltable">
           <tr>
             <td>
@@ -213,8 +233,7 @@
             </td>
           </tr>
         </table>
-        <!--  Database -->
-        <!--  Tools-->
+
         <table class="skilltable">
           <tr>
             <td>
@@ -224,16 +243,14 @@
           <tr>
             <td>
               <p>VSCode SublimeText</p>
-
               <p>Git Github</p>
               <p>Windows</p>
             </td>
           </tr>
         </table>
-        <!--  Tools -->
       </div>
+
       <div class="projectholder">
-        <!--  Other-->
         <table class="skilltable">
           <tr>
             <td>
@@ -243,58 +260,51 @@
           <tr>
             <td>
               <p>HTML CSS EJS</p>
-
-              <p>Tailwind Bootstrap</p>
+              <p> Bootstrap</p>
               <p>Postman</p>
             </td>
           </tr>
         </table>
-        <!--  Other -->
-        <!--  Frameworks-->
+
         <table class="skilltable">
           <tr>
             <td>
-              <h4>Frame Works</h4>
+              <h4>Frameworks</h4>
             </td>
           </tr>
           <tr>
             <td>
               <p>React Express.js</p>
-
               <p>Node.js</p>
             </td>
           </tr>
         </table>
-        <!--  frameworks -->
       </div>
     </div>
     <!-- skills end -->
-    <!-- about start  -->
-    <div>
+
+    <!-- about start -->
+    <div id="about">
       <div class="titles">
         <h1><span class="purple">#</span>about-me</h1>
         <div class="purpledash"></div>
         <div class="blankdash"></div>
       </div>
-      <p>Hey, i'm Nash!</p>
+      <p>Hey, I'm Nash!</p>
       <p>
-        I'm a full-stack newbie based on Kerala,India.I am looking for placement
-        web development carrier.
+        I'm a full-stack newbie based in Kerala, India. I am looking for
+        placement opportunities in web development.
       </p>
       <p>
-        I always strive to learn about the newest technologies and
-        frameworks.Transforming my creativity and knowledge into creations of my
-        hard-work.
+        I always strive to learn about the newest technologies and frameworks.
+        Transforming my creativity and knowledge into creations of hard work.
       </p>
       <a href="/about" class="purplebutton">Read more &rarr; </a>
     </div>
-    <div>
-      <!-- <img src="/assets/Image-1.png" alt="profile2" /> -->
-    </div>
     <!-- about end -->
-    <!-- Contact me -->
 
-    <div class="cardholder">
+    <!-- contact start -->
+    <div id="contact" class="cardholder">
       <div>
         <h1><span class="purple">#</span>contact</h1>
         <p>Hii!!</p>
@@ -321,27 +331,13 @@
         </table>
       </div>
     </div>
-    <!-- contact -->
+    <!-- contact end -->
+
     <hr />
     <!-- footer -->
     <div>
-      <h5>&#35;disclaimer</h5>
-      <h6>
-        This website is originally designed by following creator in figma and i
-        was inspired and thought to recreate it, as for both experience and
-        personal use only.
-      </h6>
+      <!-- footer content -->
     </div>
-    <div>
-      <h5>Elias</h5>
-      <h5>elias@elias-dev.ml</h5>
-      <p>Web designer and front-end developer</p>
-    </div>
-    <div>
-      <h4>Media</h4>
-      <!-- media logs and pics -->
-    </div>
-    <div>&copy; Copyright 2022. Made by Elias</div>
     <!-- footer -->
   </body>
 </html>
