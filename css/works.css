@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+* {
+    font-family: Fira Code;
+}
+
+body {
+    background-color: rgb(40, 44, 51);
+    color: rgb(171, 178, 191);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(171, 178, 191);
+}
+
+a:hover,
+a:active {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.linkactive {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+h1,
+h4 {
+    color: rgb(255, 255, 255);
+}
+
+.whitebold {
+    color: white;
+    font-weight: 500;
+}
+
+.square {
+    height: 20px;
+    width: 20px;
+    background: rgb(199, 120, 221);
+}
+
+.purpledash {
+    height: 2px;
+    width: 35%;
+    background: rgb(199, 120, 221);
+}
+
+.blankdash {
+    height: 2px;
+    width: 35%;
+}
+
+nav {
+    color: rgb(255, 255, 255);
+}
+
+.profilepic {
+    height: 300px;
+    position: absolute;
+    transform: scaleX(-1);
+    right: 0;
+    bottom: 65px;
+}
+
+.merndev {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+    margin-bottom: 150px;
+}
+
+table,
+tr,
+td {
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+td {
+    width: 5px;
+}
+
+.merndev2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.greyBox {
+    border: solid;
+    border-color: rgb(171, 178, 191);
+    padding: 10px;
+    border-width: 1px;
+}
+
+.purplebutton {
+    border: solid;
+    border-color: rgb(199, 120, 221);
+    padding: 5px;
+    border-width: 1px;
+    width: 25%;
+}
+
+.purpleBox {
+    border: solid;
+    border-color: rgb(199, 120, 221);
+    border-width: 1px;
+    padding: 3px;
+}
+
+.workingon {
+    margin-top: 250px;
+}
+
+.quote1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: space-around;
+    font-size: 18px;
+    line-height: 1px;
+}
+
+.quoteline1,
+.quoteline2 {
+    border: solid;
+    border-color: rgb(171, 178, 191);
+    border-width: 1px;
+    padding: 5px;
+    border-width: 3px;
+}
+
+.purple {
+    color: rgb(199, 120, 221);
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.grey {
+    color: rgb(171, 178, 191);
+}
+
+.navflexone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 400px;
+}
+
+.navflextwo {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.titles {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.projectpic {
+    border: 1px;
+    border-style: solid;
+    height: 250px;
+}
+
+.cardholder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectholder {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+table.skilltable {
+    width: 18%;
+}
+
+h3.skilltable {
+    width: 10em;
+}
+
+.contactlogo {
+    position: relative;
+    top: 5px;
+    height: 18px;
+    color: rgb(171, 178, 191);
+}
+
+/* Media Queries */
+
+/* For Portrait Orientation */
+@media (orientation: portrait) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .merndev {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .navflexone {
+        gap: 150px;
+    }
+
+    .profilepic {
+        height: 250px;
+        bottom: 50px;
+    }
+
+    .quote1 {
+        font-size: 16px;
+    }
+
+    .projectpic {
+        height: 200px;
+    }
+
+    table.skilltable {
+        width: 25%;
+    }
+}
+
+/* For Landscape Orientation */
+@media (orientation: landscape) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .merndev {
+        flex-direction: row;
+        margin-bottom: 150px;
+    }
+
+    .navflexone {
+        gap: 300px;
+    }
+
+    .profilepic {
+        height: 300px;
+        bottom: 65px;
+    }
+
+    .quote1 {
+        font-size: 18px;
+    }
+
+    .projectpic {
+        height: 250px;
+    }
+
+    table.skilltable {
+        width: 18%;
+    }
+}
+
+/* For Smaller Screens */
+@media (max-width: 768px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .merndev {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .navflexone {
+        gap: 50px;
+    }
+
+    .profilepic {
+        height: 200px;
+        bottom: 40px;
+    }
+
+    .quote1 {
+        font-size: 14px;
+    }
+
+    .projectpic {
+        height: 180px;
+    }
+
+    table.skilltable {
+        width: 35%;
+    }
+}
+
+/* For Extra Small Screens */
+@media (max-width: 480px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .merndev {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .navflexone {
+        gap: 20px;
+    }
+
+    .profilepic {
+        height: 150px;
+        bottom: 30px;
+    }
+
+    .quote1 {
+        font-size: 12px;
+    }
+
+    .projectpic {
+        height: 150px;
+    }
+
+    table.skilltable {
+        width: 50%;
+    }
+}
